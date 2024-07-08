@@ -6,11 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 12:58:15 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/25 16:08:27 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:47:50 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <ctype.h>
-/*#include <stdio.h>*/
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -6,12 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 16:16:22 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/25 18:56:26 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:58:31 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
-/*#include <stdio.h>*/
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

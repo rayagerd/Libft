@@ -6,11 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 18:17:09 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/27 20:20:50 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:49:58 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*#include <stdio.h>*/
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

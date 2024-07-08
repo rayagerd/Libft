@@ -6,11 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 18:59:46 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/28 19:25:34 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:50:16 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*#include <stdio.h>*/
-#include <string.h> 
+#include "libft.h" 
 
 void	*ft_memset(void *s, int c, size_t n)
 {

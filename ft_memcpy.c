@@ -6,12 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 18:55:43 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/28 19:23:57 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:49:38 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
-/*#include <stdio.h>*/
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

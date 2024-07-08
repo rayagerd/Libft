@@ -6,11 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 18:39:00 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/28 19:21:39 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:51:29 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
-/*#include <stdio.h>*/
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

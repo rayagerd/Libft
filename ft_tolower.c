@@ -6,12 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 21:52:50 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/28 21:56:48 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 18:00:33 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-/*#include <stdio.h>*/
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

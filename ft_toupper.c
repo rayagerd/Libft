@@ -6,12 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 21:39:25 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/06/28 21:54:55 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 18:00:57 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-/*#include <stdio.h>*/
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,12 +6,10 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 12:46:48 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/04 16:18:36 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 17:51:06 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
-/*#include <stdio.h>*/
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
