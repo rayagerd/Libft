@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/08 18:01:29 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/08 20:01:49 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,7 @@ size_t	ft_strlen(const char *s);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 // Declarations from ft_strlcat.c
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
+// Declarations from ft_substr.c
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
