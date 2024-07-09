@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/08 20:01:49 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/09 19:48:21 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stddef.h>
 # include <stdint.h>
 # include <stdio.h>
+# include <ctype.h>
 
 // Declarations from ft_memset.c
 void	*ft_memset(void *s, int c, size_t n);
@@ -68,5 +69,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 // Declarations from ft_substr.c
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-
+// Declarations from ft_strjoin.c
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
