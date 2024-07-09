@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/09 19:48:21 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/09 20:41:44 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,4 +71,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 // Declarations from ft_strjoin.c
 char	*ft_strjoin(char const *s1, char const *s2);
+// Declarations from ft_strtrim.c
+char	*ft_strtrim(char const *s1, char const *set);
 #endif
