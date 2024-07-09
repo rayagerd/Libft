@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/02 19:07:29 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/08 17:59:24 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/09 15:38:59 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -16,7 +16,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	b;
 	size_t	l;
 
-	if (*little == '\0')
+	if (!big)
+		return (NULL);
+	if (!little || *little == '\0')
 		return ((char *)big);
 	b = 0;
 	while ((big)[b] != '\0' && b < len)
@@ -36,7 +38,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 int	main()
 {
 	const char *largestring = "Hello World";
-	const char *smallstring = "World";
+	const char *smallstring = NULL;
 	char *ptr;
 	
 	ptr = ft_strnstr(largestring, smallstring, 6);

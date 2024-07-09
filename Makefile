@@ -6,7 +6,7 @@
 #    By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/06 19:43:19 by rgerdzhi          #+#    #+#              #
-#    Updated: 2024/07/08 20:00:30 by rgerdzhi         ###   ########.fr        #
+#    Updated: 2024/07/09 15:53:22 by rgerdzhi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,8 +37,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar -q $(NAME) $(OBJ)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
+%.o: %.c Makefile libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
@@ -47,5 +47,9 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+test: $(NAME)
+	cc $(NAME)
+	./a.out
 
 .PHONY: all clean fclean re 

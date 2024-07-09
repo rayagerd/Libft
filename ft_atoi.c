@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 17:44:46 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/08 17:44:38 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/09 19:09:26 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -18,6 +18,8 @@ int	ft_atoi(const char *nptr)
 
 	result = 0;
 	sign = 1;
+	if (!nptr)
+		return (0);
 	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
@@ -37,11 +39,11 @@ int	ft_atoi(const char *nptr)
 int main () 
 {
    int val;
-   char str[] = "      -15yyh6abdc";
-   val = atoi(str);
-   printf("Ctrl value = %d\n", val);
+   char *str = NULL; //"      -15yyh6abdc  ";
    val = ft_atoi(str);
    printf("My value = %d\n", val);
+   val = atoi(str);
+   printf("Ctrl value = %d\n", val);
    return(0);
 }
 */

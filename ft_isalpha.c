@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/22 20:51:17 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/08 18:37:08 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/09 19:10:15 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -18,12 +18,11 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-
 /*
-int	main(int argc, char *argv[])
+#include <ctype.h>
+int	main()
 {
-	char c;
-	c = argv[1][0];
+char c = 'A';
 	printf("MY FUNTION: %d\n", ft_isalpha(c));
 	printf("isalph: %d\n", isalpha(c));
 	return (0);
