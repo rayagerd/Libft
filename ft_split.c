@@ -6,11 +6,16 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 17:48:52 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/11 18:55:55 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/11 20:30:50 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
+//"hola que       tal" -> 3
+//" hola que      tal" -> 3
+//"hola que     tal " -> 3
+//"                     " -> 0
+//"" -> 0
 static int	ft_count(char const *s, char c)
 {
 	int	counter;
@@ -42,6 +47,7 @@ static void	ft_free(char **farray, int failed)
 		free(farray[failed - 1]);
 		failed--;
 	}
+	free(farray);
 }
 
 char	**ft_split(char const *s, char c)
@@ -52,12 +58,12 @@ char	**ft_split(char const *s, char c)
 	int		j;
 
 	array = (char **)ft_calloc(ft_count(s, c) + 1, sizeof(char *));
-	if (!s || !array)
-		return (free(array), NULL);
+	if (!array)
+		return (NULL);
 	i = 0;
 	j = 0;
 	num_words = 0;
-	while (s[i])
+	while (num_words < ft_count(s, c))
 	{
 		while (s[i] && s[i] == c)
 			i++;
@@ -75,11 +81,12 @@ char	**ft_split(char const *s, char c)
 int	main()
 {
 	//char a[200] = "    HOLA iiii    RAYA";
-	char a[50] = "ccccccHolaccTatoccccquecctal";
+	//char a[50] = "";
 	char **ret;
 	int i;
 
-	ret = ft_split(a, 'c');
+	i = 0;
+	ret = ft_split("", ' ');
 	while(ret[i])
 		printf("%s\n", ret[i++]);
 	return (0);
