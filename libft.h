@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/13 23:56:24 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/14 01:40:20 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,6 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 // Declarations from ft_strmapi.c
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+// Declarations from ft_striteri.c
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 #endif
