@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/11 18:57:01 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/13 21:01:47 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 // Declarations from ft_split.c
 char	**ft_split(char const *s, char c);
+// Declarations from ft_itoa.c
+char	*ft_itoa(int n);
 #endif
