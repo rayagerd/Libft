@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/14 01:40:20 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/14 03:24:02 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,12 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 // Declarations from ft_striteri.c
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+// Declarations from fr_putchar_fd.c
+void	ft_putchar_fd(char c, int fd);
+// Declarations from ft_putstr_fd.c
+void	ft_putstr_fd(char *s, int fd);
+// Declarations from ft_putendl_fd.c
+void	ft_putendl_fd(char *s, int fd);
+// Declarations from ft_putnbr_fd.c
+void	ft_putnbr_fd(int n, int fd);
 #endif
