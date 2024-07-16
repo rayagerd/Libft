@@ -6,7 +6,7 @@
 #    By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/06 19:43:19 by rgerdzhi          #+#    #+#              #
-#    Updated: 2024/07/16 16:54:58 by rgerdzhi         ###   ########.fr        #
+#    Updated: 2024/07/16 19:02:14 by rgerdzhi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_substr.c \
 ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-SRCS_B = ft_lstnew.c
+SRCS_B = ft_lstnew.c ft_lstadd_front.c
 
 OBJ = $(SRCS:.c=.o)
 

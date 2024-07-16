@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/16 16:46:04 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/16 19:03:26 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,4 +98,6 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 //*BONUS* Declarations from ft_lstnew.c
 t_list	*ft_lstnew(void *content);
+//*BONUS* Declarations from ft_lstadd_front.c
+void	ft_lstadd_front(t_list **lst, t_list *new);
 #endif
