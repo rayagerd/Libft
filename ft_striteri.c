@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 01:13:56 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/14 01:50:37 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/16 16:52:15 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -40,5 +40,4 @@ int main(void)
     ft_striteri(str, to_func);
     printf("Modified string: %s\n", str);
     return (0);
-}
-*/
+}*/

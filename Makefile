@@ -6,7 +6,7 @@
 #    By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/06 19:43:19 by rgerdzhi          #+#    #+#              #
-#    Updated: 2024/07/14 03:23:21 by rgerdzhi         ###   ########.fr        #
+#    Updated: 2024/07/16 16:54:58 by rgerdzhi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,11 @@ ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c ft_substr.c \
 ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
+SRCS_B = ft_lstnew.c
+
 OBJ = $(SRCS:.c=.o)
+
+OBJ_B = $(SRCS_B:.c=.o)
 
 # **************************************************************************** #
 #                                 VARIABLES                                    #
@@ -42,8 +46,11 @@ $(NAME): $(OBJ)
 %.o: %.c Makefile libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
+bonus: $(OBJ_B)
+	ar -q $(NAME) $(OBJ_B)
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_B)
 
 fclean: clean
 	rm -f $(NAME)
@@ -54,4 +61,4 @@ test: $(NAME)
 	cc $(NAME)
 	./a.out
 
-.PHONY: all clean fclean re 
+.PHONY: all clean fclean re bonus

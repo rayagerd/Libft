@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/14 03:24:02 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/16 16:46:04 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,12 @@
 # include <stdio.h>
 # include <ctype.h>
 # include <string.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 // Declarations from ft_memset.c
 void	*ft_memset(void *s, int c, size_t n);
@@ -90,4 +96,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 // Declarations from ft_putnbr_fd.c
 void	ft_putnbr_fd(int n, int fd);
+//*BONUS* Declarations from ft_lstnew.c
+t_list	*ft_lstnew(void *content);
 #endif
