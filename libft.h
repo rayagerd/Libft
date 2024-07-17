@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/17 18:54:52 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/17 21:01:25 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,4 +106,12 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 //*BONUS* Declarations from ft_lstadd_back.c
 void	ft_lstadd_back(t_list **lst, t_list *new);
+//*BONUS* Declarations from ft_lstdelone.c
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+//*BONUS* Declarations from ft_lstclear.c
+void	ft_lstclear(t_list **lst, void (*del)(void*));
+//*BONUS* Declarations from ft_lstiter.c
+void	ft_lstiter(t_list *lst, void (*f)(void*));
+//*BONUS* Declarations from ft_lstmap.c
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 #endif

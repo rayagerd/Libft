@@ -6,7 +6,7 @@
 #    By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/06 19:43:19 by rgerdzhi          #+#    #+#              #
-#    Updated: 2024/07/17 19:02:04 by rgerdzhi         ###   ########.fr        #
+#    Updated: 2024/07/17 21:00:28 by rgerdzhi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
 SRCS_B = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-ft_lstadd_back.c
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJ = $(SRCS:.c=.o)
 
@@ -57,9 +57,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-test: $(NAME)
-	cc $(NAME)
-	./a.out
 
 .PHONY: all clean fclean re bonus
