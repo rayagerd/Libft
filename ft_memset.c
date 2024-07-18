@@ -6,10 +6,13 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 18:59:46 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/08 17:50:16 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/18 15:54:09 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h" 
+
+/* Fills the first n bytes of the memory area pointed to by s with the constant 
+byte c. The memset() function returns a pointer to the memory area s.*/
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -18,7 +21,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	ptr = (unsigned char *)s;
 	i = 0;
-	while (ptr[i] != '\0' && i < n)
+	while (i < n)
 	{
 		ptr[i] = c;
 		i++;
@@ -26,9 +29,9 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /*
-int	main(int argc, char *argv[]) 
+int	main() 
 { 
-	char *str = argv[1];	
+	char *str = NULL;	
 	printf("Before ft_memset(): %s\n", str);
 	//fill 3 bytes with * starting from str[4]
 	ft_memset(str + 4, '*', 3);
@@ -37,5 +40,4 @@ int	main(int argc, char *argv[])
 	memset(str + 4, 'a', 3);  
 	printf("After memset(): %s\n", str);
 	return (0); 
-} 
-*/
+}*/

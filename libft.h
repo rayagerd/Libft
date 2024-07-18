@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 17:41:21 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/17 21:01:25 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/18 16:31:17 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,22 +96,22 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 // Declarations from ft_putnbr_fd.c
 void	ft_putnbr_fd(int n, int fd);
-//*BONUS* Declarations from ft_lstnew.c
+//*BONUS* Declarations from ft_lstnew_bonus.c
 t_list	*ft_lstnew(void *content);
-//*BONUS* Declarations from ft_lstadd_front.c
+//*BONUS* Declarations from ft_lstadd_front_bonus.c
 void	ft_lstadd_front(t_list **lst, t_list *new);
-//*BONUS* Declarations from ft_lstsize.c
+//*BONUS* Declarations from ft_lstsize_bonus.c
 int		ft_lstsize(t_list *lst);
-//*BONUS* Declarations from ft_lstlast.c
+//*BONUS* Declarations from ft_lstlast_bonus.c
 t_list	*ft_lstlast(t_list *lst);
-//*BONUS* Declarations from ft_lstadd_back.c
+//*BONUS* Declarations from ft_lstadd_back_bonus.c
 void	ft_lstadd_back(t_list **lst, t_list *new);
-//*BONUS* Declarations from ft_lstdelone.c
+//*BONUS* Declarations from ft_lstdelon_bonus.c
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
-//*BONUS* Declarations from ft_lstclear.c
+//*BONUS* Declarations from ft_lstclear_bonus.c
 void	ft_lstclear(t_list **lst, void (*del)(void*));
-//*BONUS* Declarations from ft_lstiter.c
+//*BONUS* Declarations from ft_lstiter_bonus.c
 void	ft_lstiter(t_list *lst, void (*f)(void*));
-//*BONUS* Declarations from ft_lstmap.c
+//*BONUS* Declarations from ft_lstmap_bonus.c
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 #endif
