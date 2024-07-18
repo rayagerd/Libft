@@ -6,7 +6,7 @@
 #    By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/06 19:43:19 by rgerdzhi          #+#    #+#              #
-#    Updated: 2024/07/18 17:17:46 by rgerdzhi         ###   ########.fr        #
+#    Updated: 2024/07/18 17:46:56 by rgerdzhi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ OBJ_B = $(SRCS_B:.c=.o)
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Werror -Wextra
 
@@ -48,15 +48,17 @@ $(NAME): $(OBJ)
 %.o: %.c Makefile libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
-bonus: $(OBJ_B)
-	ar -q $(NAME) $(OBJ_B)
+bonus: $(OBJ) $(OBJ_B)
+	ar -q $(NAME) $(OBJ) $(OBJ_B)
+	@touch bonus
 
 clean:
 	rm -f $(OBJ) $(OBJ_B)
+	rm -f bonus
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re

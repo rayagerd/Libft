@@ -15,10 +15,10 @@ static size_t	ft_nlen(int n)
 {
 	size_t	len;
 
-	len = 1;
+	len = 0;
 	if (n < 0)
 		len++;
-	while (n / 10 != 0)
+	while (n)
 	{
 		len++;
 		n /= 10;
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 	len = ft_nlen(num);
 	if (num == 0)
 		return (ft_strdup("0"));
-	narray = (char *)ft_calloc(len + 1, sizeof(char *));
+	narray = (char *)malloc((len + 1) * sizeof(char));
 	if (!narray)
 		return (NULL);
 	narray[len] = '\0';
