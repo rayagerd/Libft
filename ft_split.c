@@ -6,7 +6,7 @@
 /*   By: rgerdzhi <rgerdzhi@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/10 17:48:52 by rgerdzhi          #+#    #+#             */
-/*   Updated: 2024/07/11 20:30:50 by rgerdzhi         ###   ########.fr       */
+/*   Updated: 2024/07/25 15:46:01 by rgerdzhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,6 +21,8 @@ static int	ft_count(char const *s, char c)
 	int	counter;
 	int	i;
 
+	if (!s)
+		return (NULL);
 	counter = 0;
 	i = 0;
 	while (s[i])
